@@ -1,4 +1,4 @@
-# Spotify m
+# Spotify 
 Spotify is a music application that gives you access to millions of songs. Search tracks, albums, artists and create your own playlists.
 
 # Usage
