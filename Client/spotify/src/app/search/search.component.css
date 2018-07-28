@@ -1,0 +1,20 @@
+
+.lead{
+    opacity:1;
+}
+
+.well{
+    background-color: rgb(53, 53, 53);
+    border: 0px; 
+    margin-top: 10px;
+}
+
+.text-info{
+    opacity: 0.7;
+}
+
+.artist_name{
+    font-weight: bold;
+    color:white;
+}
+

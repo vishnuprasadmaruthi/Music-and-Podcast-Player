@@ -1,0 +1,35 @@
+<button class="btn btn-primary create" type="button" routerLink='/create' >
+    Create New
+</button>
+<div class="start">
+
+    <h2 class="text-success display-2"> Playlists</h2>
+
+
+    <div class="playlists" *ngFor="let res of searchRes">
+
+
+        <div class="col-md-3">
+            <div class="search-res well album">
+                <div *ngIf='res.images.length >= 1'>
+                    <img class="album-thumb img-thumbnail" src="{{res.images[0].url}}">
+                </div>
+
+                <div *ngIf='res.images.length < 1'>
+                    <img class="album-thumb  empty" src="../assets/images/emptyMusic.PNG">
+                </div>
+
+                <h4 class="album=name text-success">
+                    <a>{{res.name}}</a>
+                </h4>
+
+                <h4>
+                    <a class="btn btn-primary" routerLink='/playlisttracks/{{res.id}}'>View</a>
+                </h4>
+                
+
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="start">
+        <h1 class="text-success  display-2 ">Connect on Spotify</h1>
+        <p class="lead text-muted">
+            Spotify helps you browse artists, tracks, <span class="text-success">albums</span> and listen your favourite songs!
+        </p>
+    <form>
+        <div>
+            <input type="text" name="searchStr" [(ngModel)]="searchStr" (keyup)="searchMusica()" class="form-control" placeholder="Search music....">
+        </div>
+    </form>
+
+
+
+    <div *ngIf="searchRes&&searchStr">
+        <div *ngFor="let res of searchRes">
+
+            <div class="col-md-3">
+                <div class="search-res well album">
+                    <div *ngIf='res.images.length > 0'>
+                        <img class="album-thumb img-thumbnail" src="{{res.images[0].url}}">
+                    </div>
+                    <h4 class="album=name text-success" >{{res.name}}</h4>
+                    <a class="btn btn-default btn-block" routerLink = "/album/{{res.id}}">Album Details</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--
+<div class="well album ">
+        <div *ngIf  = 'album.images.length > 0'>
+            <img class="album-thumb img-thumbnail" src="{{album.images[0].url}}">
+            <h4 class="album=name text-success">{{album.name}} </h4>
+            <a class="btn btn-default btn-block" routerLink = "/album/{{album.id}}">Album Details</a>
+
+        </div>
+    </div>
+-->

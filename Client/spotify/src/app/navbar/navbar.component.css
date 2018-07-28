@@ -1,0 +1,48 @@
+.navbar-static-top {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    
+}
+
+.nav-img{
+    width: 2%;
+}
+
+
+.nav-link{
+    font-size: 170%;
+    display: block;
+    margin: 0px 10px;    
+}
+
+
+
+.navbar-brand{
+    font-size: 275%;
+    display: block;
+    padding-left: 0.5% ;   
+}
+
+.navbar{
+    background-color: rgb(66, 66, 66)   /* rgb(122, 59, 59)*/;
+}
+
+.logout{
+    display: block;
+    padding: 10px;
+    float: right;   
+    
+}
+
+.logout>a{
+    color:white;
+    font-weight: bold;
+    
+}
+
+.active, .homestyle{
+    /*background-color:rgb(54, 53, 53);*/
+    color: rgb(69, 216, 69) !important;
+}

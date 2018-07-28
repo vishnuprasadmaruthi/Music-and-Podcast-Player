@@ -1,0 +1,32 @@
+<div class='start'>
+    <h1 class="text-success  display-2 ">Connect on Spotify</h1>
+
+    <p class="lead  text-muted">
+        Spotify helps you browse <span class="text-success">artists</span>, tracks, albums and listen your favourite songs!
+    </p>
+    <form>
+        <div>
+            <input type="text" name="searchStr" [(ngModel)]="searchStr" (keydown)="searchMusic()" class="form-control" placeholder="Search music....">
+        </div>
+    </form>
+
+
+    <div *ngIf="searchRes && searchStr">
+        <div *ngFor="let res of searchRes">
+            <div></div>
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="search-res well">
+                        <h4 class="artist_name">
+                            <a routerLink='/artist/{{res.id}}'>{{res.name}}</a>
+                        </h4>
+                        <div>
+                            <strong class="text-info">Genre:</strong>
+                            <span class="text-info" *ngFor='let genre of res.genres'>{{genre}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>>

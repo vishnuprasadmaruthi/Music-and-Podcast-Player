@@ -1,0 +1,69 @@
+<header class="start">
+    <div class='row'>
+        <div class="col-md-4" *ngIf="playlist.images.length >= 1">
+            <img src="{{playlist.images[0].url}}" class="album-thumb">
+        </div>
+
+        <div class="col-md-4" *ngIf="playlist.images.length < 1">
+            <img src="../assets/images/emptyMusic.PNG" class="album-thumb">
+        </div>
+        <div class="col-md-8">
+            <h2 class="text-success display-2" *ngIf="playlist">{{playlist.name}}</h2>
+            <h2 class="text-info lead" *ngIf="playlist">{{playlist.owner.display_name}}</h2>
+            <a class="btn btn-primary" href="{{playlist.external_urls.spotify}}" target="_blank">View in Spotify</a>
+        </div>
+    </div>
+</header>
+
+<div class="start" *ngIf="searchRes">
+    <h2 class="text-success">
+        <strong>Tracks</strong>
+    </h2>
+
+    <div *ngFor="let res of searchRes">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="search-res well">
+                    <h4 class=text-track>{{res.track.name}}</h4>
+                    <a class="btn btn-secondary" href="{{res.track.external_urls.spotify}}" target="_blank">Listen Track</a>
+                    <a class="btn btn-secondary text-white remove" target="_blank" (click)='delid(res.track.id)'>Remove</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--add playlist tracks-->
+<div class="start">
+
+    <h2 class="text-success">
+        <strong>Search and add songs to this playlist!</strong>
+    </h2>
+    <form>
+        <div>
+            <input type="text" name="searchStr" [(ngModel)]="addStr" (keyup)="searchMusics()" class="form-control" placeholder="Search tracks....">
+        </div>
+    </form>
+    <div class=empty>
+    <div>    
+
+
+    <div *ngIf="addRes && addStr">
+        <div *ngFor="let res of addRes">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="search-res well">
+                        <h4 class="text-track">
+                            <a>{{res.name}}</a>
+                        </h4>
+                        <a class="btn btn-secondary" (click)='addTrack(res.id)' >Add Track</a>
+                        <!--<a class="btn btn-secondary text-white add"> Add </a>-->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
