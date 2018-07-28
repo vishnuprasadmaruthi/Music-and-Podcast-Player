@@ -1,10 +1,8 @@
-# final-project-web-ninjas
-final-project-web-ninjas created by GitHub Classroom
-# Spotify Muzik App
-Spotify Muzik App is a Music Application in which you can search Tracks, Albums, Artists and User can access his playlist created on spotify.com
+# Spotify m
+Spotify is a music application that gives you access to millions of songs. Search tracks, albums, artists and create your own playlists.
 
 # Usage
-Spotify Muzik App is for non-commercial use only.
+this app is for non-commercial use only.
 
 # Installations
 
@@ -32,7 +30,7 @@ Spotify Muzik App is for non-commercial use only.
 
 11. go to localhost:8888/
 
-12. Explore your Muzik 
+12. Explore your music 
 
 # Getting a token 
  /*
@@ -86,7 +84,7 @@ searchMusic(str:String, type:any ,token:string){   //type='artist'/track/album
     
   }
   
-# Get user's exact Play list 
+# Get user's exact Playlist 
 /*
 * Used to get details of user's selected Playlist
 */
