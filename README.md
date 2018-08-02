@@ -2,7 +2,14 @@
 Spotify is a music application that gives you access to millions of songs. Search tracks, albums, artists and create your own playlists.
 
 # Usage
-this app is for non-commercial use only.
+This app is for non-commercial use only.
+
+#Technologies used
+- Angular 4
+- NodeJS
+- OAuth
+- Bootstrap
+- REST APIs
 
 # Installations
 
@@ -49,7 +56,7 @@ this app is for non-commercial use only.
      .map(res=> res.json());
   }
 
-# SearchMuzik by Artist, Track, Album
+# Search music by Artist, Track, Album
 /*
 * This function lets you search  Artist, Track, Album on click of Respective tabs
 */
