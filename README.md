@@ -4,7 +4,7 @@ Spotify is a music application that gives you access to millions of songs. Searc
 # Usage
 This app is for non-commercial use only.
 
-#Technologies used
+# Technologies used
 - Angular 4
 - NodeJS
 - OAuth
