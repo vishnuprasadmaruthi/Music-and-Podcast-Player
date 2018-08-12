@@ -1,6 +1,8 @@
 # Spotify 
 Spotify is a music application that gives you access to millions of songs. Search tracks, albums, artists and create your own playlists.
 
+![home](https://user-images.githubusercontent.com/32049867/43998386-ab401172-9dc2-11e8-8f9b-213da2f052e6.JPG)
+
 # Usage
 This app is for non-commercial use only.
 
@@ -73,6 +75,15 @@ searchMusic(str:String, type:any ,token:string){   //type='artist'/track/album
     .map((res: Response) => res.json())
 }
 
+# Tracks
+![tracks](https://user-images.githubusercontent.com/32049867/43998403-0c6e102a-9dc3-11e8-9df0-ea8e0e6dbf62.JPG)
+
+# Artists
+![artist](https://user-images.githubusercontent.com/32049867/43998409-1e0b4ed8-9dc3-11e8-8b0c-878870dcd3b3.JPG)
+
+# Albums
+![albums](https://user-images.githubusercontent.com/32049867/43998413-3517ad60-9dc3-11e8-8110-2b4ea14506a5.JPG)
+
 
  # Get the playlist
  /*
@@ -91,6 +102,9 @@ searchMusic(str:String, type:any ,token:string){   //type='artist'/track/album
     
   }
   
+# Playlist
+  ![playlist](https://user-images.githubusercontent.com/32049867/43998414-3fa1bb7c-9dc3-11e8-836b-f0ca3e23be25.JPG)
+  
 # Get user's exact Playlist 
 /*
 * Used to get details of user's selected Playlist
@@ -106,6 +120,9 @@ getExactPlayList(id:any,token:string){
    return this._http.get(this.searchUrl , {headers : headers})
    .map((res: Response) => res.json())
  }
+ 
+ # Playlist tracks
+ ![playlist-tracks](https://user-images.githubusercontent.com/32049867/43998416-49d9d106-9dc3-11e8-99c4-bd4d982fd484.JPG)
  
  # Get the tracks of the selected play list
 
